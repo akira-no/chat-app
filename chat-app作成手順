@@ -1,0 +1,14 @@
+rails _6.0.0_ new 　　 -d mysql
+confing/database.yml encoding:utf8 変更
+rails db:create
+
+confing/application.rb
+    config.load_defaults 6.0
+   # 中略
+    config.generators do |g|
+      g.stylesheets false
+      g.javascripts false
+      g.helper false
+      g.test_framework false
+    end
+    #コントローラー作成時にそれぞれ不要なファイルを生成しないようにする
