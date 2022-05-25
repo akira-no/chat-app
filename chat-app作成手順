@@ -111,3 +111,5 @@ app/views/messages/index.html.erb
 app/assets/stylesheets/messages.css 編集
 
 コミット サイドバーとチャット画面のレイアウト作成
+
+コミット サイドバーのフロント実装
