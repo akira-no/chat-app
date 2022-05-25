@@ -1,5 +1,7 @@
-rails _6.0.0_ new 　　 -d mysql
+rails _6.0.0_ new chat-app -d mysql
+
 confing/database.yml encoding:utf8 変更
+
 rails db:create
 
 confing/application.rb
@@ -12,7 +14,9 @@ confing/application.rb
       g.test_framework false
     end
     #コントローラー作成時にそれぞれ不要なファイルを生成しないようにする
+
 GitHub Desktop コミット プッシュ ブラウザでできてるか確認
+
 read me.mdにdb設計を記載
 # テーブル設計
 
@@ -66,3 +70,48 @@ read me.mdにdb設計を記載
 
 - belongs_to :room
 - belongs_to :user
+
+github desktop コミット プッシュ changes確認
+
+github ブランチ フロント実装作成
+
+root to: "messages#index" #ルーティング
+
+rails g controller messages index #ファイル名+アクションでコントローラーにindexアクション+viewsファイルmassages/index.html.erb作成になる
+
+コミット フロント実装準備
+
+リセットcss YUI 3 
+views/layouts/application.html.erb
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css"> #これを貼り付け
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>  #この行の上に
+
+コミット リセットcssの設定
+
+app/assets/stylesheets/application.css
+  * {box-sizing: border-box;}  
+
+コミット 要素サイズの調整
+
+app/views/message
+  _main_chat.html.erb & _side_bar.html.erb 作成
+
+app/assets/stylesheets
+  messages.css 作成
+
+app/views/messages/index.html.erb
+  <div class = "wrapper">
+  <%= render "side_bar" %>
+  <%= render "main_chat" %>
+  </div>
+  #'部分テンプレート'の読み込みなのでファイル名とは違う点に注意
+
+コミット サイドバーとチャット画面ファイルの分割
+
+app/assets/stylesheets/messages.css 編集
+
+コミット サイドバーとチャット画面のレイアウト作成
+
+コミット サイドバーのフロント実装
+
+コミット チャット画面のフロント実装
