@@ -71,4 +71,9 @@ github desktop コミット プッシュ changes確認
 github ブランチ フロント実装作成
 root to: "messages#index" #ルーティング
 rails g controller messages index #ファイル名+アクションでコントローラーにindexアクション+viewsファイルmassages/index.html.erb作成になる
-コミット
+コミット フロント実装準備
+リセットcss YUI 3 
+views/layouts/application.html.erb
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css"> #これを貼り付け
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>  #この行の上に
+コミット リセットcssの設定
