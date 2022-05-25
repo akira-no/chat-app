@@ -107,3 +107,7 @@ app/views/messages/index.html.erb
   #'部分テンプレート'の読み込みなのでファイル名とは違う点に注意
 
 コミット サイドバーとチャット画面ファイルの分割
+
+app/assets/stylesheets/messages.css 編集
+
+コミット サイドバーとチャット画面のレイアウト作成
