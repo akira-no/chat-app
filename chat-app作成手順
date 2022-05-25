@@ -77,3 +77,5 @@ views/layouts/application.html.erb
   <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css"> #これを貼り付け
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>  #この行の上に
 コミット リセットcssの設定
+app/assets/stylesheets/application.css
+  * {box-sizing: border-box;}  
