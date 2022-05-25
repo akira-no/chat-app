@@ -66,3 +66,9 @@ read me.mdにdb設計を記載
 
 - belongs_to :room
 - belongs_to :user
+
+github desktop コミット プッシュ changes確認
+github ブランチ フロント実装作成
+root to: "messages#index" #ルーティング
+rails g controller messages index #ファイル名+アクションでコントローラーにindexアクション+viewsファイルmassages/index.html.erb作成になる
+コミット
